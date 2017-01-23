@@ -1,4 +1,4 @@
-# python  package and init.py
+# python  package and __init__.py
 
 
 
