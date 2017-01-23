@@ -1,7 +1,5 @@
 # python  package and _ _init _ _.py
 
-
-
 # quick start 
 ## download the project 
 ```
@@ -78,7 +76,16 @@ from example1 import testexample1
 
 __all__=['example1']
 ```
-
+## about _ _init_ _.py
+```
+1.__init__.py is the indicator of  a package 
+2.In the py file ,when use __all__ name that is a list you can add moudle name,you can 
+  use `from testpackage import *` to load the moudles of list .for example,__all__=['example']     in __init__.py and  you can use the below method in hello.py: 
+  from testpackage import * 
+  example.testexample()#'i love python'
+3.when add `from example import example1` in __init__.py ,you can use 
+  'from testpackage import example1' in hello.py  
+```
 ## python hello.py output
 ```
 i love python
@@ -88,7 +95,6 @@ i love python
 i love python
 i love python
 ```
-
 
 
 
