@@ -38,6 +38,33 @@ python_import_package
           ├── __init__.py
           └── __init__.pyc
 ```
+
+
+## __init__.py(testpackage)
+```
+from example import testexample
+__all__=['example']
+
+```
+## __init__.py(testpackage.subpackage)
+
+```
+from example1 import testexample1
+__all__=['example1']
+
+```
+## about _ _init_ _.py
+```
+1.__init__.py is the indicator of  a package 
+2.when __all__=['example']in __init__.py,
+  you can use the below method in hello.py: 
+  from testpackage import * 
+  example.testexample()#'i love python'
+3.when add `from example import example1` in __init__.py ,you can use 
+  'from testpackage import example1' in hello.py  
+4.usual call is valid such as 'from testpackage import example'  
+
+```
 ## hello.py import package 
 ```
 #Inspired by #http://mikegrouchy.com/blog/2012/05/bepythonic__init__py.html
@@ -65,29 +92,8 @@ from testpackage.subpackage import testexample1
 testexample1()
 ```
 
-## __init__.py(testpackage)
-```
-from example import testexample
-__all__=['example']
-```
-## __init__.py(testpackage.subpackage)
-```
-from example1 import testexample1
 
-__all__=['example1']
-```
-## about _ _init_ _.py
-```
-1.__init__.py is the indicator of  a package 
-```
-```
-2.In the py file ,when use __all__ name that is a list you can add moudle name,you can 
-  use `from testpackage import *` to load the moudles of list .for example,__all__=['example']     in __init__.py and  you can use the below method in hello.py: 
-  from testpackage import * 
-  example.testexample()#'i love python'
-3.when add `from example import example1` in __init__.py ,you can use 
-  'from testpackage import example1' in hello.py  
-```
+
 ## python hello.py output
 ```
 i love python
@@ -98,7 +104,7 @@ i love python
 i love python
 ```
 
-
+###  Please feel free to aks any question in the post !
 
 
 
