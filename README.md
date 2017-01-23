@@ -62,6 +62,20 @@ from testpackage.subpackage import testexample1
 testexample1()
 ```
 
+##__init__.py(testpackage)
+```
+from example import testexample
+__all__=['example']
+```
+##__init__.py(testpackage.subpackage)
+```
+from example1 import testexample1
+
+__all__=['example1']
+```
+
+
+
 
 ##python hello.py output
 ```
