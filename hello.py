@@ -1,4 +1,4 @@
-#reference:http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html
+#Inspired by http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html
 
 
 from testpackage import *
