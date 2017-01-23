@@ -2,10 +2,15 @@
 
 
 
-#quick start 
+# quick start 
+## download the project 
+```
+git clone https://github.com/oxfordyang2016/python_import_package.git
+```
 
+Note: this is a projetc including a package consisted by some moudles and a suboackage including some moudles
 
-##the simplest package struct tree 
+## the simplest package struct tree 
 ```
 testpackage.
  ├── example.py
@@ -18,7 +23,7 @@ testpackage.
       ├── __init__.py
       └── __init__.pyc
 ```
-##project  struct tree
+## project  struct tree
 ```
 python_import_package
  ├── hello.py
@@ -62,22 +67,19 @@ from testpackage.subpackage import testexample1
 testexample1()
 ```
 
-##__init__.py(testpackage)
+## __init__.py(testpackage)
 ```
 from example import testexample
 __all__=['example']
 ```
-##__init__.py(testpackage.subpackage)
+## __init__.py(testpackage.subpackage)
 ```
 from example1 import testexample1
 
 __all__=['example1']
 ```
 
-
-
-
-##python hello.py output
+## python hello.py output
 ```
 i love python
 i love python
@@ -86,7 +88,6 @@ i love python
 i love python
 i love python
 ```
-
 
 
 
