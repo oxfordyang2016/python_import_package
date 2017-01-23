@@ -40,18 +40,18 @@ python_import_package
 ```
 
 
-## _ _init_ _.py(testpackage)
+## _ _ init _ _.py(testpackage)
 ```
 from example import testexample
 __all__=['example']
 ```
-## _ _init_ _.py(testpackage.subpackage)
+## _ _ init _ _.py(testpackage.subpackage)
 
 ```
 from example1 import testexample1
 __all__=['example1']
 ```
-## about _ _init_ _ _ .py
+## about _  _ init _ _  .py
 ```
 1.__init__.py is the indicator of  a package 
 2.when __all__=['example']in __init__.py,
@@ -61,6 +61,8 @@ __all__=['example1']
 3.when add `from example import example1` in __init__.py ,you can use 
   'from testpackage import example1' in hello.py  
 4.usual call is valid such as 'from testpackage import example'  
+5.__init__.py can be a empty file and you need import moudle in usual method.
+6.imported things is moudle ,function ,name ,classs or more low level things.
 ```
 ## hello.py import package 
 ```
