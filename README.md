@@ -1,6 +1,13 @@
 # python  package and _ _init _ _.py
 
+
 # quick start 
+
+## requirements
+
+* python 2.7+
+* git 
+
 ## download the project 
 ```
 git clone https://github.com/oxfordyang2016/python_import_package.git
@@ -52,18 +59,19 @@ from example1 import testexample1
 __all__=['example1']
 ```
 ## about _  _ init _ _  .py
-```
-1.__init__.py is the indicator of  a package 
-2.when __all__=['example']in __init__.py,
+
+* __ init __.py is the indicator of  a package 
+* when __ all __=['example']in _ _ init _ _.py,
   you can use the below method in hello.py: 
   from testpackage import * 
   example.testexample()#'i love python'
-3.when add `from example import example1` in __init__.py ,you can use 
+* when add `from example import example1` in __init__.py ,you can use 
   'from testpackage import example1' in hello.py  
-4.usual call is valid such as 'from testpackage import example'  
-5.__init__.py can be a empty file and you need import moudle in usual method.
-6.imported things is moudle ,function ,name ,classs or more low level things.
-```
+* usual import is valid such as 'from testpackage import example'  
+* _ _ init_ _.py can be a empty file and you need import moudle in usual   method.
+* imported things is moudle ,function ,name ,classs or more low level things.
+
+  ​
 ## hello.py import package 
 ```
 #Inspired by #http://mikegrouchy.com/blog/2012/05/bepythonic__init__py.html
