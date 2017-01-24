@@ -92,7 +92,7 @@ example1.testexample1()
 from testpackage.subpackage import testexample1
 testexample1()
 ```
-####  Notice the difference between '__all__' name and 'from testpackage import *.
+####  Notice the difference between '_ _ all _ _' name and 'from testpackage import *.
 
 
 ## python hello.py output
